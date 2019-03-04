@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.titulo {
+	background-color: black;
+	font-family: fantasy;
+	font-size: 2em;
+	font-style: italic;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.titulo a {
+	text-decoration: none;
+	color: white;
+}
+
+.descripciontitulo {
+	color: white;
+	background-color: black;
+	font-family: fantasy;
+	font-size: 1em;
+	font-style: italic;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: black;
+}
+
+.menu ul {
+	border-radius: 1em;
+	background-color: gray;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.menu li {
+	float: left;
+	width: 20%;
+}
+
+.menu li a {
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	font-family: fantasy;
+	font-size: 48px;
+}
+
+li a:HOVER {
+	border-radius: 1em;
+	background-color: blue;
+	padding: 5px;
+}
+
+.fotoinicio {
+	text-align: center;
+}
+
+.datoscontacto {
+	color: white;
+	font-size: 0.85em;
+	background-color: grey;
+	width: 20%;
+	border-radius: 1em;
+	margin-left: 10px;
+	padding: 5px;
+	text-align: justify;
+	float: left;
+}
+
+.iniciosobrenosotros ul {
+	border-radius: 1em;
+	width: 75%;
+	float: right;
+	background-color: gray;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.iniciosobrenosotros li {
+	float: left;
+	width: 30%;
+}
+
+.iniciosobrenosotros li a {
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	font-family: fantasy;
+	font-size: 24px;
+}
+
+.iniciosobrenosotros li a:HOVER {
+	border-radius: 1em;
+	background-color: blue;
+	padding: 5px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>El Rincon del saxo</title>
+</head>
+<body>
+
+	<div class="titulo">
+		<header>
+			<h1>
+				<a href="index.html">El rincón del saxo</a>
+			</h1>
+		</header>
+		<div class="descripciontitulo">
+			<p>El rincón del saxo, la web en la que encontrar todo lo
+				relacionado con el saxofón</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="saxofones.html">Saxofones</a></li>
+				<li><a href="boquillas.html">Boquillas</a></li>
+				<li><a href="cañas.html">Cañas</a></li>
+				<li><a href="colgantes.html">Colgantes</a></li>
+				<li><a href="abrazaderas.html">Abrazaderas</a></li>
+
+			</ul>
+		</div>
+		<div class="fotoinicio">
+			<img style="width:1366px;" id="inicio" src="1.jpg">
+
+		</div>
+
+		<div class="datoscontacto">
+			<p>
+				El rincón del saxofón<br>Calle Atocha, 2<br>Madrid, España<br>912536545
+			</p>
+		</div>
+
+		<div class="iniciosobrenosotros">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+
+			</ul>
+
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript">
+	var imagenActual = 1;
+	function siguienteImagen()
+	{
+		if (imagenActual == 1) {
+			imagenActual = 2;
+			document.getElementById("inicio").src = imagenActual + ".jpg";
+		}
+		else{
+			imagenActual = 1;
+			document.getElementById("inicio").src = imagenActual + ".jpg"
+		}
+	}
+	setInterval(siguienteImagen, 3000);
+	</script>
+
+</body>
+</html>
